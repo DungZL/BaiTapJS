@@ -79,22 +79,21 @@ document.getElementById("btn5").addEventListener("click", function () {
     btn4.innerHTML = "📒 Bài 4";
     btn5.innerHTML = "📖 Bài 5";
 })
-
+// Bài 1
 document.getElementById("resultbtn1").addEventListener("click", function (e) {
-    e.preventDefault(); // Xử lý load trang với button của form
+    e.preventDefault(); 
     let salary1Day = Number(document.getElementById("salary_1day").value);
     let daysWorked = Number(document.getElementById("days_worked").value);
-    
+
     let totalSalary = salary1Day * daysWorked;
     
-    // In ra kết quả
-    document.getElementById("result").innerHTML = "👉 Tổng tiền lương: " + totalSalary.toLocaleString('vi-VN') + " VNĐ";
+    document.getElementById("result").innerHTML = "👉 Tổng tiền lương: " + " VNĐ";
 });
 
-// Bài 2: Tính giá trị trung bình
+// Bài 2
 document.getElementById("resultbtn2").addEventListener("click", function (e) {
     e.preventDefault();
-    // Lấy giá trị và ép kiểu dữ liệu sang Number
+
     let n1 = Number(document.getElementById("ave1").value);
     let n2 = Number(document.getElementById("ave2").value);
     let n3 = Number(document.getElementById("ave3").value);
@@ -107,7 +106,7 @@ document.getElementById("resultbtn2").addEventListener("click", function (e) {
     document.getElementById("result").innerHTML = "👉 Giá trị trung bình: " + average;
 });
 
-// Bài 3: Quy đổi tiền
+// Bài 3
 document.getElementById("resultbtn3").addEventListener("click", function (e) {
     e.preventDefault();
     let usd = Number(document.getElementById("usdcount").value);
@@ -115,7 +114,6 @@ document.getElementById("resultbtn3").addEventListener("click", function (e) {
     
     let vnd = usd * exchangeRate;
     
-    // Sử dụng NumberFormat để số tiền hiển thị đẹp hơn
     let formattedVND = new Intl.NumberFormat('vi-VN').format(vnd);
     
     document.getElementById("result").innerHTML = "👉 Số tiền quy đổi: " + formattedVND + " VNĐ";
@@ -133,13 +131,11 @@ document.getElementById("resultbtn4").addEventListener("click", function (e) {
     document.getElementById("result").innerHTML = "👉 Diện tích: " + area + " | Chu vi: " + perimeter;
 });
 
-// Bài 5: Tính tổng 2 ký số
+// Bài 5
 document.getElementById("resultbtn5").addEventListener("click", function (e) {
     e.preventDefault();
     let number = Number(document.getElementById("numbercount").value);
     
-    // Xử lý lấy hàng chục và hàng đơn vị
-    // Math.abs giúp xử lý trường hợp người dùng nhập số âm
     let tens = Math.floor(Math.abs(number) / 10);
     let units = Math.abs(number) % 10;
     
