@@ -1,0 +1,64 @@
+Bài 1
+Input (Đầu vào):
+số: số lương, số ngày làm việc
+
+Process:
+B1: lấy giá trị nhập từ user gán vào salary1Day và daysWorked
+B2: ép về kiểu số
+B3: Tạo biến totalSalary = salary1Day nhân daysWorked
+
+Output (Đầu ra):
+In giá trị biến totalSalary vào khung result
+
+Bài 2
+Input (Đầu vào):
+số: 6 số thực
+
+Process:
+B1: lấy giá trị nhập từ user gán vào n1, n2, n3, n4, n5, n6
+B2: ép về kiểu số
+B3: Tạo biến average = (n1 + n2 + n3 + n4 + n5 + n6) chia 6
+
+Output (Đầu ra):
+In giá trị biến average vào khung result
+
+Bài 3
+Input (Đầu vào):
+số: số tiền USD
+
+Process:
+B1: lấy giá trị nhập từ user gán vào usd
+B2: ép về kiểu số
+B3: Tạo biến exchangeRate = 23500
+B4: Tạo biến vnd = usd nhân exchangeRate
+B5: Tạo biến formattedVND = định dạng biến vnd phân cách hàng nghìn
+
+Output (Đầu ra):
+In giá trị biến formattedVND vào khung result
+
+Bài 4
+Input (Đầu vào):
+số: chiều dài, chiều rộng
+
+Process:
+B1: lấy giá trị nhập từ user gán vào length và width
+B2: ép về kiểu số
+B3: Tạo biến area = length nhân width
+B4: Tạo biến perimeter = (length cộng width) nhân 2
+
+Output (Đầu ra):
+In giá trị biến area và perimeter vào khung result
+
+Bài 5
+Input (Đầu vào):
+số: số có 2 chữ số
+
+Process:
+B1: lấy giá trị nhập từ user gán vào number
+B2: ép về kiểu số
+B3: Tạo biến tens = phần nguyên của number chia 10
+B4: Tạo biến units = phần dư của number chia 10
+B5: Tạo biến total = tens cộng units
+
+Output (Đầu ra):
+In giá trị biến total vào khung result
