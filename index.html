@@ -40,13 +40,13 @@
                     <form id="salaryform" class="mb-4">
                         <div class="row g-3">
                             <div class="col-md-4">
-                                <input type="number"class="form-control bg-light" placeholder="Nhập lương một ngày" required>
+                                <input id="salary_1day" type="number" class="form-control bg-light" placeholder="Nhập lương một ngày" required>
                             </div>
                             <div class="col-md-4">
-                                <input type="number" class="form-control bg-light" placeholder="Số ngày làm" required>
+                                <input id="days_worked" type="number" class="form-control bg-light" placeholder="Số ngày làm" required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3 px-4 rounded-pill">Tính lương</button>
+                        <button id="resultbtn1" type="submit" class="btn btn-primary mt-3 px-4 rounded-pill">Tính lương</button>
                     </form>
                 </div>
 
@@ -69,27 +69,27 @@
                     <form id="averageform" class="mb-4">
                         <div class="row g-3">
                             <div class="col-md-4">
-                                <input type="number"class="form-control bg-light" placeholder="Nhập số thứ 1" required>
+                                <input id="ave1" type="number"class="form-control bg-light" placeholder="Nhập số thứ 1" required>
                             </div>
                             <div class="col-md-4">
-                                <input type="number" class="form-control bg-light" placeholder="Nhập số thứ 2" required>
+                                <input id="ave2" type="number" class="form-control bg-light" placeholder="Nhập số thứ 2" required>
                             </div>
                             <div class="col-md-4">
-                                <input type="number" class="form-control bg-light" placeholder="Nhập số thứ 3" required>
+                                <input id="ave3" type="number" class="form-control bg-light" placeholder="Nhập số thứ 3" required>
                             </div>
                         </div>
                         <div class="row g-3 mt-2">
                             <div class="col-md-4">
-                                <input type="number"class="form-control bg-light" placeholder="Nhập số thứ 4" required>
+                                <input id="ave4" type="number"class="form-control bg-light" placeholder="Nhập số thứ 4" required>
                             </div>
                             <div class="col-md-4">
-                                <input type="number" class="form-control bg-light" placeholder="Nhập số thứ 5" required>
+                                <input id="ave5" type="number" class="form-control bg-light" placeholder="Nhập số thứ 5" required>
                             </div>
                             <div class="col-md-4">
-                                <input type="number" class="form-control bg-light" placeholder="Nhập số thứ 6" required>
+                                <input id="ave6" type="number" class="form-control bg-light" placeholder="Nhập số thứ 6" required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3 px-4 rounded-pill">Tính trung bình</button>
+                        <button id="resultbtn2" type="submit" class="btn btn-primary mt-3 px-4 rounded-pill">Tính trung bình</button>
                     </form>
                 </div>
 
@@ -110,10 +110,10 @@
                     <form id="Changeform" class="mb-4">
                         <div class="row g-3">
                             <div class="col-md-4">
-                                <input type="number"class="form-control bg-light" placeholder="Nhập số tiền USD" required>
+                                <input id="usdcount"type="number"class="form-control bg-light" placeholder="Nhập số tiền USD" required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3 px-4 rounded-pill">Quy đổi tiền</button>
+                        <button id="resultbtn3" type="submit" class="btn btn-primary mt-3 px-4 rounded-pill">Quy đổi tiền</button>
                     </form>
                 </div>
  
@@ -130,16 +130,16 @@
                             </ul>
                         </div>
                     </div>
-                    <form id="Changeform" class="mb-4">
+                    <form id="areform" class="mb-4">
                         <div class="row g-3">
                             <div class="col-md-4">
-                                <input type="number"class="form-control bg-light" placeholder="Nhập chiều dài" required>
+                                <input id="length" type="number" class="form-control bg-light" placeholder="Nhập chiều dài" required>
                             </div>
                             <div class="col-md-4">
-                                <input type="number"class="form-control bg-light" placeholder="Nhập chiều rộng" required>
+                                <input id="width" type="number" class="form-control bg-light" placeholder="Nhập chiều rộng" required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3 px-4 rounded-pill">Tính</button>
+                        <button id="resultbtn4" type="submit" class="btn btn-primary mt-3 px-4 rounded-pill">Tính</button>
                     </form>
                 </div>
 
@@ -154,13 +154,13 @@
                             </ul>
                         </div>
                     </div>
-                    <form id="Changeform" class="mb-4">
+                    <form id="totalform" class="mb-4">
                         <div class="row g-3">
                             <div class="col-md-4">
-                                <input type="number"class="form-control bg-light" placeholder="Nhập số có 2 chữ số" required>
+                                <input id="numbercount" type="number"class="form-control bg-light" placeholder="Nhập số có 2 chữ số" required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3 px-4 rounded-pill">Tính tổng</button>
+                        <button id="resultbtn5" type="submit" class="btn btn-primary mt-3 px-4 rounded-pill">Tính tổng</button>
                     </form>
                 </div>
                 <div class="alert alert-success d-flex align-items-center" id="result">
