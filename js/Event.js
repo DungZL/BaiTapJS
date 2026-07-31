@@ -87,7 +87,7 @@ document.getElementById("resultbtn1").addEventListener("click", function (e) {
 
     let totalSalary = salary1Day * daysWorked;
     
-    document.getElementById("result").innerHTML = "👉 Tổng tiền lương: " + " VNĐ";
+    document.getElementById("result").innerHTML = "👉 Tổng tiền lương: " + totalSalary + " VNĐ";
 });
 
 // Bài 2
